@@ -10,7 +10,9 @@
   },
   "jest": {
     "testEnvironment": "node",
-    "testTimeout": 20000
+    "testTimeout": 20000,
+    "globalSetup": "./tests/globalSetup.js",
+    "globalTeardown": "./tests/globalTeardown.js"
   },
   "engines": {
     "node": ">=18"

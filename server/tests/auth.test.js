@@ -2,7 +2,7 @@ const request = require('supertest');
 const db = require('./setup');
 const app = require('../app');
 
-beforeAll(() => db.connect('taskflow_test_auth'));
+beforeAll(() => db.connect('taskflow_test_auth'), 30000);
 afterEach(() => db.clear());
 afterAll(() => db.disconnect());
 

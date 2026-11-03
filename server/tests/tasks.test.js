@@ -6,7 +6,7 @@ let token;
 let otherToken;
 const auth = () => ({ Authorization: `Bearer ${token}` });
 
-beforeAll(() => db.connect('taskflow_test_tasks'));
+beforeAll(() => db.connect('taskflow_test_tasks'), 30000);
 beforeEach(async () => {
   await db.clear();
   token = (await request(app).post('/api/auth/register').send({ name: 'Sara', email: 'sara@example.com', password: 'secret123' })).body.token;

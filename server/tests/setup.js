@@ -8,7 +8,7 @@ const BASE_URI = process.env.MONGO_URI_TEST || 'mongodb://127.0.0.1:27017';
 
 async function connect(dbName) {
   const uri = `${BASE_URI.replace(/\/$/, '')}/${dbName}`;
-  await mongoose.connect(uri);
+  await mongoose.connect(uri, { serverSelectionTimeoutMS: 15000 });
 }
 
 async function clear() {

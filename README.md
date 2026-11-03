@@ -2,7 +2,7 @@
 
 A clean, responsive task manager. Sign up, add tasks with priorities and due dates, and find what matters with filters, search and sorting.
 
-**Live demo:** https://taskflow-waseel.onrender.com
+**Live demo:** https://taskflow-waseel-eac0.onrender.com
 *(Hosted on Render's free plan. The first visit after a quiet period can take about 30 seconds while the server wakes up.)*
 
 ![CI](https://github.com/muhammad-waseel/taskflow/actions/workflows/ci.yml/badge.svg)

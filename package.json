@@ -1,0 +1,16 @@
+{
+  "name": "taskflow",
+  "version": "1.0.0",
+  "private": true,
+  "description": "TaskFlow - full-stack task manager (React, Express, MongoDB, JWT)",
+  "scripts": {
+    "install:all": "npm ci --prefix server && npm ci --prefix client",
+    "build": "npm run build --prefix client",
+    "start": "npm start --prefix server",
+    "test": "npm test --prefix server",
+    "render-build": "npm ci --prefix server --omit=dev && npm ci --prefix client --include=dev && npm run build --prefix client"
+  },
+  "engines": { "node": ">=18" },
+  "author": "Muhammad Waseel",
+  "license": "MIT"
+}

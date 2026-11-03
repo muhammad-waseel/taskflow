@@ -21,7 +21,7 @@ A clean, responsive task manager. Sign up, add tasks with priorities and due dat
 | Layer | Tools |
 |---|---|
 | Frontend | React 19, Vite, plain CSS |
-| Backend | Node.js, Express 5, Mongoose 9 |
+| Backend | Node.js, Express 5, Mongoose 8 |
 | Database | MongoDB (Atlas in production) |
 | Security | JWT, bcrypt, Helmet, rate limiting on auth routes |
 | Testing | Jest + Supertest (34 API tests) |

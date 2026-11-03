@@ -11,5 +11,7 @@ services:
         value: production
       - key: MONGO_URI
         sync: false
+      - key: MONGO_DB_NAME
+        value: taskflow
       - key: JWT_SECRET
         generateValue: true

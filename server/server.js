@@ -11,7 +11,7 @@ if (!MONGO_URI || !JWT_SECRET) {
 }
 
 mongoose
-  .connect(MONGO_URI)
+  .connect(MONGO_URI, { dbName: process.env.MONGO_DB_NAME || undefined })
   .then(() => {
     console.log('MongoDB connected');
     app.listen(PORT, () => console.log(`TaskFlow running on port ${PORT}`));

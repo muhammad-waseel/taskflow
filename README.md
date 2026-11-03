@@ -84,7 +84,7 @@ Deployed on Render as a single web service. Express serves both the API and the 
 
 - Build command: `npm run render-build`
 - Start command: `npm start`
-- Environment variables: `MONGO_URI`, `JWT_SECRET`, `NODE_ENV=production`
+- Environment variables: `MONGO_URI`, `MONGO_DB_NAME=taskflow`, `JWT_SECRET`, `NODE_ENV=production`
 
 ---
 

@@ -76,7 +76,7 @@ docker compose up --build
 npm test
 ```
 
-The 34 Jest and Supertest tests cover registration, login, token checks, validation, task CRUD, filters, search, sorting, stats and access control between users. CI runs them against a real MongoDB service on every push, then builds the client and the Docker image.
+The 34 Jest and Supertest tests cover registration, login, token checks, validation, task CRUD, filters, search, sorting, stats and access control between users. The tests start a temporary in-memory MongoDB 8 automatically. Set `MONGO_URI_TEST` to use your own database instead. CI runs the tests on every push, then builds the client and the Docker image.
 
 ## Deployment
 
